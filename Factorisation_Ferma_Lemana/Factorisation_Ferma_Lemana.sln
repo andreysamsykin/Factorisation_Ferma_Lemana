@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorisation_Ferma_Lemana", "Factorisation_Ferma_Lemana.csproj", "{785BACCE-D700-4517-99CF-10C4576CA5CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{785BACCE-D700-4517-99CF-10C4576CA5CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785BACCE-D700-4517-99CF-10C4576CA5CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785BACCE-D700-4517-99CF-10C4576CA5CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785BACCE-D700-4517-99CF-10C4576CA5CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94B40101-CB2C-4800-BF2B-883C556F897E}
+	EndGlobalSection
+EndGlobal
