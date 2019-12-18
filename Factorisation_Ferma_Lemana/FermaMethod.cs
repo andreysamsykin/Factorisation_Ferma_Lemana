@@ -8,5 +8,9 @@ namespace Factorisation_Ferma_Lemana
 {
     class FermaMethod
     {
+        /// <summary>
+        /// Факторизуемое число
+        /// </summary>
+        int n;
     }
 }

@@ -8,5 +8,6 @@ namespace Factorisation_Ferma_Lemana
 {
     class LemanaMethod
     {
+        
     }
 }

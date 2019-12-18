@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="FermaMethod.cs" />
     <Compile Include="LemanaMethod.cs" />
+    <Compile Include="MyMath.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
