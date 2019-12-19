@@ -50,7 +50,6 @@ namespace Factorisation_Ferma_Lemana
             return true;
         }
 
-
         public static bool isIntegerDivisionable(ulong a, ulong b)
         {
             if (a%b==0)

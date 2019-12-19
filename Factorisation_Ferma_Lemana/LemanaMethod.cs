@@ -25,8 +25,8 @@ namespace Factorisation_Ferma_Lemana
 
         public static void LemanaFactorisation(ulong n)
         {
-
-            for (ulong a = 2; a < Math.Pow(n, 1 / 3); a++)
+            #region
+            for (ulong a = 2; a < Math.Pow(n, 1 / 3f); a++)
             {
                 if (MyMath.isIntegerDivisionable(a, n))
                 {
@@ -34,9 +34,9 @@ namespace Factorisation_Ferma_Lemana
 
                 }
             }
-            for (ulong k = 1; k < Math.Pow(n, 1 / 3); k++)
+            for (ulong k = 1; k < Math.Pow(n, 1 / 3f); k++)
             {
-                for (int d = 0; d < (Math.Pow(n, 1 / 6) / 4 * Math.Sqrt(k)); d++)
+                for (int d = 0; d < (Math.Pow(n, 1 / 6f) / 4 * Math.Sqrt(k)); d++)
                 {
                     if (MyMath.isSquare(Convert.ToUInt64(Math.Pow((Math.Sqrt(4 * k * n) + d), 2) - 4 * k * n)))
                     {
@@ -53,7 +53,8 @@ namespace Factorisation_Ferma_Lemana
                     }
                 }
             }
-            Console.WriteLine("56");
+            #endregion
+
 
         }
     }
