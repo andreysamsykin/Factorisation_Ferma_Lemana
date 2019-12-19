@@ -8,6 +8,53 @@ namespace Factorisation_Ferma_Lemana
 {
     class LemanaMethod
     {
-        
+        /// <summary>
+        /// Факторизуемое число
+        /// </summary>
+        private static ulong n;
+
+        /// <summary>
+        /// Первое простое число
+        /// </summary>
+        private static ulong A;
+
+        /// <summary>
+        /// Второе простое число
+        /// </summary>
+        private static ulong B;
+
+        public static void LemanaFactorisation(ulong n)
+        {
+
+            for (ulong a = 2; a < Math.Pow(n, 1 / 3); a++)
+            {
+                if (MyMath.isIntegerDivisionable(a, n))
+                {
+                    Console.WriteLine($"33");
+
+                }
+            }
+            for (ulong k = 1; k < Math.Pow(n, 1 / 3); k++)
+            {
+                for (int d = 0; d < (Math.Pow(n, 1 / 6) / 4 * Math.Sqrt(k)); d++)
+                {
+                    if (MyMath.isSquare(Convert.ToUInt64(Math.Pow((Math.Sqrt(4 * k * n) + d), 2) - 4 * k * n)))
+                    {
+                        A = Convert.ToUInt64(Math.Sqrt(4 * k * n) + d);
+                        B = Convert.ToUInt64(Math.Sqrt(A * A - 4 * k * n));
+                        if (1 < MyMath.GCD(A + B, n) && MyMath.GCD(A + B, n) < n)
+                        {
+                            Console.WriteLine($"{MyMath.GCD(A + B, n)}");
+                        }
+                        else if (1 < MyMath.GCD(A - B, n) && MyMath.GCD(A - B, n) < n)
+                        {
+                            Console.WriteLine($"{MyMath.GCD(A - B, n)}");
+                        }
+                    }
+                }
+            }
+            Console.WriteLine("56");
+
+        }
     }
 }

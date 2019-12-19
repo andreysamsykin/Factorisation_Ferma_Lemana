@@ -10,7 +10,7 @@ namespace Factorisation_Ferma_Lemana
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(FermaMethod.Ferma_Factorisation(168829));
+            LemanaMethod.LemanaFactorisation(168829);
         }
     }
 }
