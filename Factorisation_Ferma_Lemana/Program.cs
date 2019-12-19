@@ -10,7 +10,7 @@ namespace Factorisation_Ferma_Lemana
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(MyMath.isIntegerDivisionable(25,7));
+            Console.WriteLine(FermaMethod.Ferma_Factorisation(168829));
         }
     }
 }

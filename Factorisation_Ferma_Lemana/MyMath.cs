@@ -41,7 +41,7 @@ namespace Factorisation_Ferma_Lemana
         /// </summary>
         /// <param name="n">Проверяемое число</param>
         /// <returns>Если число простое, возвращает true, иначе - false</returns>
-        public bool isPrime(ulong n)
+        public static bool isPrime(ulong n)
         {
             for (ulong i = 2; i < n / 2 + 1; i++)
             {
