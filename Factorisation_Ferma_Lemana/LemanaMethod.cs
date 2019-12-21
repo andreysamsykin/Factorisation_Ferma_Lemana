@@ -23,9 +23,15 @@ namespace Factorisation_Ferma_Lemana
         /// </summary>
         private static ulong B;
 
-        public static void LemanaFactorisation(ulong n)
+        private static int counter = 0;
+
+        public static ulong[] res = {0,0};
+        /// <summary>
+        /// Факторизация методом Лемана
+        /// </summary>
+        /// <param name="n">Факторизуемое число</param>
+        public static string LemanaFactorisation(ulong n)
         {
-            #region
             for (ulong a = 2; a < Math.Pow(n, 1 / 3f); a++)
             {
                 if (MyMath.isIntegerDivisionable(a, n))
@@ -44,17 +50,27 @@ namespace Factorisation_Ferma_Lemana
                         B = Convert.ToUInt64(Math.Sqrt(A * A - 4 * k * n));
                         if (1 < MyMath.GCD(A + B, n) && MyMath.GCD(A + B, n) < n)
                         {
-                            Console.WriteLine($"{MyMath.GCD(A + B, n)}");
+                            res[counter] = MyMath.GCD(A + B, n);
+                            //Console.Write($"{MyMath.GCD(A + B, n)} ");
+                            counter++;
                         }
                         else if (1 < MyMath.GCD(A - B, n) && MyMath.GCD(A - B, n) < n)
                         {
+                            
                             Console.WriteLine($"{MyMath.GCD(A - B, n)}");
                         }
                     }
                 }
             }
-            #endregion
 
+            if (res[0]!=0&&res[1]!=0)
+            {
+                return $"Факторизация методом Лемана успешна. Числа: {res[0]}, {res[1]}.";
+            }
+            else
+            {
+                return "Факторизация не удалась. Ошибка.";
+            }
 
         }
     }

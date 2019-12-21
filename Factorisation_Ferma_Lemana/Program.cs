@@ -11,8 +11,8 @@ namespace Factorisation_Ferma_Lemana
         static double pow = 1 / 3;
         static void Main(string[] args)
         {
-            LemanaMethod.LemanaFactorisation(168829);
-            //Console.WriteLine(Math.Pow(216,1/3f));
+            Console.WriteLine(FermaMethod.Ferma_Factorisation(168829));
+            Console.WriteLine(LemanaMethod.LemanaFactorisation(168829));
         }
     }
 }

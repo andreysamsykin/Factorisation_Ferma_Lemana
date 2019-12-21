@@ -16,7 +16,7 @@ namespace Factorisation_Ferma_Lemana
         /// <summary>
         /// Корень из факторизуемого числа
         /// </summary>
-         private static ulong S;
+        private static ulong S;
 
 
         private static ulong y;
@@ -35,6 +35,8 @@ namespace Factorisation_Ferma_Lemana
         /// </summary>
         /// <param name="n">Факторизуемое число</param>
         /// <returns></returns>
+
+        public static ulong[] res = {0,0};
         public static string Ferma_Factorisation(ulong n)
         {
             S = Convert.ToUInt64(Math.Sqrt(n));
@@ -46,12 +48,13 @@ namespace Factorisation_Ferma_Lemana
                 P = (S + k) + Convert.ToUInt64(Math.Sqrt(y));
                 if (J*P == n)
                 {
-                    return $"Факторизация методом Ферма успешна. Числа: {J}   {P}. Количество шагов: {k}";
+                    res[0] = J;
+                    res[1] = P;
+                    return $"Факторизация методом Ферма успешна. Числа: {res[0]}, {res[1]}. Количество шагов: {k}";
                 }
 
             }
             return "Факторизация не удалась. Ошибка.";
-            
         }
     }
 }
