@@ -11,8 +11,10 @@ namespace Factorisation_Ferma_Lemana
         static double pow = 1 / 3;
         static void Main(string[] args)
         {
-            Console.WriteLine(FermaMethod.Ferma_Factorisation(168829));
-            Console.WriteLine(LemanaMethod.LemanaFactorisation(168829));
+            Console.WriteLine("Введите число, которое хотите факторизовать: ");
+            ulong numb = Convert.ToUInt64(Console.ReadLine());
+            Console.WriteLine(FermaMethod.Ferma_Factorisation(numb));
+            Console.WriteLine(LemanaMethod.LemanaFactorisation(numb));
         }
     }
 }
